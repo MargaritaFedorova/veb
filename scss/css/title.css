@@ -1,0 +1,42 @@
+@charset "UTF-8";
+.section__title {
+  font-size: 50px;
+  font-weight: bold;
+  /* в в нет*/
+  color: #f9b43b;
+  margin-bottom: 50px;
+  line-height: 1;
+  text-transform: uppercase;
+  /* в в нет*/
+}
+.section__title--centered {
+  text-align: center;
+}
+.section__title--color--black {
+  color: black;
+  padding-top: 135px;
+  /* в в нет*/
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  /* в вебинаре нет*/
+  color: #f9b43b;
+  margin-bottom: 50px;
+  line-height: 1;
+  text-transform: uppercase;
+  /* в вебинаре нет*/
+}
+.title--white {
+  color: white;
+  margin-left: 95px;
+}
+.title--white-one {
+  color: white;
+  margin-left: 0;
+}
+.title--person {
+  color: white;
+  font-size: 14px;
+}

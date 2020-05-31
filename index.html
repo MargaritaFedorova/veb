@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgers</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=37543133-082f-461d-88d1-2b0c46deea4e&lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="./scripts/scripts.js"></script>
+        
+</head>
+<body>
+    <section class="section hero section--align--top">
+        <div class="container hero__container">
+            <header class="header">
+                <img class="logo" src="burgers-img/logo/logo.png" alt="">
+                <div class="header__btns">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">О нас</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Бургеры</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Меню</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Команда</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Отзывы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Как мы работаем</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="btn">Заказать</a>
+                    <a href="#" class="hamburger-menu-link">
+                        <div class="hamburger-menu-link__bars"></div>
+                    </a>
+                </div>
+            </header>
+            <div class="hero__content">
+                <div class="hero__img">
+                    <img src="burgers-img/first-burger/burger.png" class="hero__img-elem" alt="">
+                </div>
+                <div class="hero__text">
+                    <div class="section__title">мы делаем</div>
+                    <div class="section__desc">натуральные бургеры</div>
+                </div>
+            </div>
+            <button type="button" class="scroll scroll--down">
+                <svg class="scroll__img">
+                    <use xlink:href="./burgers-img/sprite.svg#arrow-scroll" style="fill: white;"></use> 
+                </svg>
+            </button>
+        </div>
+    </section>
+    <section class="section features">
+        <div class="container container--features">
+            <h2 class="section__title section__title--centered">мы лучшие</h2>
+            <ul class="features__list">
+                <li class="features__item feature">
+                    <div class="feature__img-elem">
+                        <svg class="feature__img">
+                            <use class="feature__pic" xlink:href="./burgers-img/sprite.svg#meat" style="fill:#e45028"></use> 
+                        </svg>
+                    </div>
+                    <div class="feature__content">
+                        <h3 class="feature__title">100% свежее мясо</h3>
+                        <div class="feature__text">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos alias iure aliquid impedit dolore. Dolorem, atque debitis cumque nulla possimus quod nihil itaque illum asperiores quae maxime quam! Optio!
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="features__item feature">
+                    <div class="feature__img-elem">
+                        <svg class="feature__img">
+                            <use class="feature__pic" xlink:href="./burgers-img/sprite.svg#hand" style="fill: #f9b43b"></use> 
+                        </svg>
+                    </div>
+                    <div class="feature__content">
+                        <h3 class="feature__title">Ручная сборка</h3>
+                        <div class="feature__text">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis at similique reprehenderit minima odit cum asperiores, impedit eos sequi accusamus fugiat dolore libero perspiciatis magni ad suscipit iusto corporis. Explicabo?
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="features__item feature">
+                    <div class="feature__img-elem">
+                        <svg class="feature__img">
+                            <use class="feature__pic" xlink:href="./burgers-img/sprite.svg#natural" style="fill:#8ac03e"></use> 
+                        </svg>
+                    </div>
+                    <div class="feature__content">
+                        <h3 class="feature__title">Натуральные ингредиенты</h3>
+                        <div class="feature__text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ratione sapiente officiis! Praesentium odit reprehenderit veritatis laboriosam laborum, quas soluta ab at, earum quaerat corrupti quae qui sed nisi quo.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section section--slider" data-anchor="section--slider">
+        <div class="container container--slider">
+            <div class="slider">
+                <ul class="slider__list">
+                    <li class="slider__elem">
+                        <div class="recipe">
+                            <a href="#" class="recipe__btn">
+                                <svg class="recipe__icon">
+                                    <use xlink:href="./burgers-img/sprite.svg#burger"></use> 
+                                </svg>
+                                <div class="recipe__title">Состав</div>
+                            </a>
+                            <ul class="recipe__list">
+                                <li class="recipe__elem">
+                                    <div class="recipe__icon-list">
+                                        <svg class="recipe__icon">
+                                            <!--<img class="icon-pic" src="./burgers-img/sprite-svg/be.svg" alt="">-->
+                                            <use xlink:href="./burgers-img/sprite.svg#beef" style="fill:#c1401e"></use> 
+                                        </svg>
+                                    </div>
+                                    <div class="recipe__text">Говядина</div>
+                                    <div class="recipe__width">300 г</div>
+                                </li>
+                                <li class="recipe__elem">
+                                    <div class="recipe__icon-list">
+                                        <svg class="recipe__icon">
+                                           
+                                            <use xlink:href="./burgers-img/sprite.svg#burger" style="fill: #f9b43b"></use> 
+                                        </svg>
+                                    </div>
+                                    <div class="recipe__text">Булочки</div>
+                                    <div class="recipe__width">100 г</div>
+                                </li>
+                                <li class="recipe__elem">
+                                    <div class="recipe__icon-list">
+                                        <svg class="recipe__icon">
+                                            <!--<img class="icon-pic" src="./burgers-img/sprite-svg/burger.svg" alt="">-->
+                                            <use xlink:href="./burgers-img/sprite.svg#salad" style="fill: #0ec55a"></use> 
+                                        </svg>
+                                    </div>
+                                    <div class="recipe__text">Зелень</div>
+                                    <div class="recipe__width">70 г</div>
+                                </li>
+                                <li class="recipe__elem">
+                                    <div class="recipe__icon-list">
+                                        <svg class="recipe__icon">
+                                            <!--<img class="icon-pic" src="./burgers-img/sprite-svg/burger.svg" alt="">-->
+                                            <use xlink:href="./burgers-img/sprite.svg#sauce" style="fill: #c1401e"></use> 
+                                        </svg>
+                                    </div>
+                                    <div class="recipe__text">Соус</div>
+                                    <div class="recipe__width">150 г</div>
+                                </li>
+                                <li class="recipe__elem">
+                                    <div class="recipe__icon-list">
+                                        <svg class="recipe__icon">
+                                            <!--<img class="icon-pic" src="./burgers-img/sprite-svg/burger.svg" alt="">-->
+                                            <use xlink:href="./burgers-img/sprite.svg#cucumber" style="fill: #0ec55a"></use> 
+                                        </svg>
+                                    </div>
+                                    <div class="recipe__text">Овощи</div>
+                                    <div class="recipe__width">200 г</div>
+                                </li>
+                                <li class="recipe__elem">
+                                    <div class="recipe__icon-list">
+                                        <svg class="recipe__icon">
+                                            <!--<img class="icon-pic" src="./burgers-img/sprite-svg/burger.svg" alt="">-->
+                                            <use xlink:href="./burgers-img/sprite.svg#cheese" style="fill: #f9b43b"></use> 
+                                        </svg>
+                                    </div>
+                                    <div class="recipe__text">Сыр</div>
+                                    <div class="recipe__width">80 г</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="kkal">
+                            <div class="icon-widht">
+                                <svg class="icon-widht__img">
+                                    <use class="icon-widht__pic" xlink:href="./burgers-img/sprite.svg#kkal" style="fill: white"></use> 
+                                </svg>
+                            </div>
+                            <div class="widht-content">
+                                <div class="widht">1200</div>
+                                <div class="widht-text">ккал</div>
+                            </div>
+                        </div>
+                        <div class="slider__col-left">
+                            <div class="slider__img">
+                                <img src="./burgers-img/slider/dark-burger.png" class="slider__pic" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__col-right ">
+                            <div class="title title--white-one">
+                                Dark BEEF Burger
+                            </div>
+                            <div class="slider__text">
+                                <p>
+                                    Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                </p>
+                            </div>
+                            <div class="slider__info">
+                                <div class="slider__cost">
+                                    <span>500</span>рублей
+                                </div>
+                                <a href="#" class="btn">Заказать</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="scroll scroll--left">
+                <svg class="scroll__img">
+                    <use xlink:href="./burgers-img/sprite.svg#arrow-scroll" style="fill: white;"></use> 
+                </svg>
+            </button>
+            <button type="button" class="scroll scroll--right">
+                <svg class="scroll__img">
+                    <use xlink:href="./burgers-img/sprite.svg#arrow-scroll" style="fill: white;"></use> 
+                </svg>
+            </button>
+        </div>
+    </section>
+    <section class="section section--team">
+        <div class="container container--team">
+            <div class="team__container">
+                <div class="team">
+                    <div class="title title__team">Команда</div>
+                    <div class="accordeon-team">
+                        <ul class="accordeon-team__list">
+                            <li class="accordeon-team__elem">
+                                <a href="" class="accordeon-team__link">
+                                    <div class="accordeon-team__triangle accordeon-team__triangle--up"></div>
+                                    <div class="accordeon-team__name title title--person">Дэниэл Рэдклиф</div>
+                                </a>
+                                <div class="accordeon-team__item">
+                                    <div class="accordeon-team__item-img">
+                                        <img class="item__pic" src="./burgers-img/team/rd.png" alt="">
+                                    </div>
+                                    <div class="accordeon-team__item-content">
+                                        <h3 class="accordeon-team__item-title">Оператор</h3>
+                                        <div class="accordeon-team__item-text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordeon-team__elem">
+                                <a href="" class="accordeon-team__link">
+                                    <div class="accordeon-team__triangle accordeon-team__triangle--up"></div>
+                                    <div class="accordeon-team__name title title--person">Ричард Джэймс</div>
+                                </a>
+                                <div class="accordeon-team__item">
+                                    <div class="accordeon-team__item-img">
+                                        <img class="item__pic" src="./burgers-img/team/rd.png" alt="">
+                                    </div>
+                                    <div class="accordeon-team__item-content">
+                                        <h3 class="accordeon-team__item-title">Оператор</h3>
+                                        <div class="accordeon-team__item-text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            </p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordeon-team__elem">
+                                <a href="" class="accordeon-team__link">
+                                    <div class="accordeon-team__triangle accordeon-team__triangle--up"></div>
+                                    <div class="accordeon-team__name title title--person">Джэйк Финн</div>
+                                </a>
+                                <div class="accordeon-team__item">
+                                    <div class="accordeon-team__item-img">
+                                        <img class="item__pic" src="./burgers-img/team/rd.png" alt="">
+                                    </div>
+                                    <div class="accordeon-team__item-content">
+                                        <h3 class="accordeon-team__item-title">Оператор</h3>
+                                        <div class="accordeon-team__item-text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            </p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordeon-team__elem">
+                                <a href="" class="accordeon-team__link">
+                                    <div class="accordeon-team__triangle accordeon-team__triangle--up"></div>
+                                    <div class="accordeon-team__name title title--person">Александр Романов</div>
+                                </a>
+                                <div class="accordeon-team__item">
+                                    <div class="accordeon-team__item-img">
+                                        <img class="item__pic" src="./burgers-img/team/rd.png" alt="">
+                                    </div>
+                                    <div class="accordeon-team__item-content">
+                                        <h3 class="accordeon-team__item-title">Оператор</h3>
+                                        <div class="accordeon-team__item-text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <ul class="reviews__list">
+            <li class="reviews__item review">
+                <div class="review__img-wrapper">
+                    <img class="review__pic" src="/burgers-img/reviews/photo.png" alt="">
+                </div>
+                <div class="review__hover">
+                    <div class="review__username">Константин</div>
+                    <div class="review__content">
+                    <p class="review__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatibus adipisci repellat facilis fugit. Veritatis necessitatibus, dicta possimus est quibusdam natus sed a magnam perferendis iste maiores delectus explicabo cupiditate.
+                    </p>
+                    </div>
+                    <a href="#" class="btn btn--color--gray">подробнее</a>
+                    <a href="#" class="btn btn--color--gray btn--none">читать отзыв</a>
+                </div>
+            </li>
+            <li class="reviews__item review">
+                <div class="review__img-wrapper">
+                    <img class="review__pic" src="/burgers-img/reviews/photo.png" alt="">
+                </div>
+                <div class="review__hover">
+                    <div class="review__username">Константин</div>
+                    <div class="review__content">
+                    <p class="review__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatibus adipisci repellat facilis fugit. Veritatis necessitatibus, dicta possimus est quibusdam natus sed a magnam perferendis iste maiores delectus explicabo cupiditate.
+                    </p>
+                    </div>
+                    <a href="#" class="btn btn--color--gray btn--none">читать отзыв</a>
+                    <a href="#" class="btn btn--color--gray">подробнее</a>
+                </div>
+            </li>
+            <li class="reviews__item review">
+                <div class="review__img-wrapper">
+                    <img class="review__pic" src="/burgers-img/reviews/photo.png" alt="">
+                </div>
+                <div class="review__hover">
+                    <div class="review__username">Константин</div>
+                    <div class="review__content">
+                    <p class="review__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatibus adipisci repellat facilis fugit. Veritatis necessitatibus, dicta possimus est quibusdam natus sed a magnam perferendis iste maiores delectus explicabo cupiditate.
+                    </p>
+                    </div>
+                    <a href="#" class="btn btn--color--gray btn--none">читать отзыв</a>
+                    <a href="#" class="btn btn--color--gray">подробнее</a>
+                </div>
+            </li>
+            <li class="reviews__item review">
+                <div class="review__img-wrapper">
+                    <img class="review__pic" src="/burgers-img/reviews/photo.png" alt="">
+                </div>
+                <div class="review__hover">
+                    <div class="review__username">Константин</div>
+                    <div class="review__content">
+                    <p class="review__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatibus adipisci repellat facilis fugit. Veritatis necessitatibus, dicta possimus est quibusdam natus sed a magnam perferendis iste maiores delectus explicabo cupiditate.
+                    </p>
+                    </div>
+                    <a href="#" class="btn btn--color--gray btn--none">читать отзыв</a>
+                    <a href="#" class="btn btn--color--gray">подробнее</a>
+                </div>
+            </li>
+            <li class="reviews__item review">
+                <div class="review__img-wrapper">
+                    <img class="review__pic" src="/burgers-img/reviews/photo.png" alt="">
+                </div>
+                <div class="review__hover">
+                    <div class="review__username">Константин</div>
+                    <div class="review__content">
+                    <p class="review__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatibus adipisci repellat facilis fugit. Veritatis necessitatibus, dicta possimus est quibusdam natus sed a magnam perferendis iste maiores delectus explicabo cupiditate.
+                    </p>
+                    </div>
+                    <a href="#" class="btn btn--color--gray btn--none">читать отзыв</a>
+                    <a href="#" class="btn btn--color--gray">подробнее</a>
+                </div>
+            </li>
+            <li class="reviews__item review">
+                <div class="review__img-wrapper">
+                    <img class="review__pic" src="/burgers-img/reviews/photo.png" alt="">
+                </div>
+                <div class="review__hover">
+                    <div class="review__username">Константин</div>
+                    <div class="review__content">
+                    <p class="review__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatibus adipisci repellat facilis fugit. Veritatis necessitatibus, dicta possimus est quibusdam natus sed a magnam perferendis iste maiores delectus explicabo cupiditate.
+                    </p>
+                    </div>
+                    <a href="#" class="btn btn--color--gray btn--none">читать отзыв</a>
+                    <a href="#" class="btn btn--color--gray">подробнее</a>
+                </div>
+            </li>
+            <li class="reviews__item review">
+                <div class="review__img-wrapper">
+                    <img class="review__pic" src="/burgers-img/reviews/photo.png" alt="">
+                </div>
+                <div class="review__hover">
+                    <div class="review__username">Константин</div>
+                    <div class="review__content">
+                    <p class="review__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatibus adipisci repellat facilis fugit. Veritatis necessitatibus, dicta possimus est quibusdam natus sed a magnam perferendis iste maiores delectus explicabo cupiditate.
+                    </p>
+                    </div>
+                    <a href="#" class="btn btn--color--gray btn--none">читать отзыв</a>
+                    <a href="#" class="btn btn--color--gray">подробнее</a>
+                </div>
+            </li>
+            <li class="reviews__item review">
+                <div class="review__img-wrapper">
+                    <img class="review__pic" src="/burgers-img/reviews/photo.png" alt="">
+                </div>
+                <div class="review__hover">
+                    <div class="review__username">Константин</div>
+                    <div class="review__content">
+                    <p class="review__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatibus adipisci repellat facilis fugit. Veritatis necessitatibus, dicta possimus est quibusdam natus sed a magnam perferendis iste maiores delectus explicabo cupiditate.
+                    </p>
+                    </div>
+                    <a href="#" class="btn btn--color--gray btn--none">читать отзыв</a>
+                    <a href="#" class="btn btn--color--gray">подробнее</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="section section--menu">
+        <h2 class="title title--white">Меню</h2>
+        <div class="accordeon-menu">
+            <ul class="accordeon-menu__list">
+                <li class="accordeon-menu__elem">
+                    <a href="#" class="accordeon-menu__title-one">
+                        <div class="accordeon-menu__title-text">для мясоедов</div>
+                    </a>
+                    <div class="accordeon-menu__content">
+                        <div class="accordeon-menu__content-text">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum quam facilis, nesciunt doloribus, iure assumenda vero recusandae hic sapiente reiciendis minus repudiandae architecto libero similique ex pariatur alias dignissimos odit!
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordeon-menu__elem">
+                    <a href="#" class="accordeon-menu__title-two">
+                        <div class="accordeon-menu__title-text">вегетарианское</div>
+                    </a>
+                    <div class="accordeon-menu__content">
+                        <div class="accordeon-menu__content-text">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum quam facilis, nesciunt doloribus, iure assumenda vero recusandae hic sapiente reiciendis minus repudiandae architecto libero similique ex pariatur alias dignissimos odit!
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordeon-menu__elem">
+                    <a href="#" class="accordeon-menu__title-tree">
+                        <div class="accordeon-menu__title-text">диетическое</div>
+                    </a>
+                    <div class="accordeon-menu__content accordeon-menu__content--last">
+                        <div class="accordeon-menu__content-text">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum quam facilis, nesciunt doloribus, iure assumenda vero recusandae hic sapiente reiciendis minus repudiandae architecto libero similique ex pariatur alias dignissimos odit!
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section order-section">
+        <div class="container">
+            <h2 class="section__title section__title--order">закажите доставку</h2>
+            <form class="order">
+                <div class="order__col">
+                    <div class="order__row">    
+                    <label class="order__block">
+                        <div class="order__title">Имя</div>
+                        <input type="text" class="order__input">
+                    </label>
+                    <label for="" class="order__block">
+                        <div class="order__title">Телефон</div>
+                        <input type="text" class="order__input">
+                    </label>
+                    </div>
+                    <div class="order__row">    
+                    <label class="order__block">
+                        <div class="order__title">Улица</div>
+                        <input type="text" class="order__input">
+                    </label>
+                    </div>
+                    <div class="order__row">
+                        <label class="order__block">    
+                            <div class="order__title">Дом</div>
+                            <input type="text" class="order__input">
+                        </label>
+                        <label class="order__block">    
+                            <div class="order__title">Корпус</div>
+                            <input type="text" class="order__input">
+                        </label>
+                        <label class="order__block">    
+                            <div class="order__title">Квартира</div>
+                            <input type="text" class="order__input">
+                        </label>
+                        <label class="order__block">
+                            <div class="order__title">Этаж</div>
+                            <input type="text" class="order__input">
+                        </label>
+                    </div>
+                </div>
+                <div class="order__col">
+                    <label class="order__block">
+                        <div class="order__title">Комментарий</div>
+                        <textarea type="text" class="order__input order__input--com" placeholder=""></textarea>
+                    </label>
+                    <div class="form__row">
+                        <div class="form__col">
+                            <div class="checkbox-wraw">
+                                <ul class="checkbox__list">
+                                    <li class="checkbox__elem">
+                                        <div class="checkbox">
+                                            <label class="checkbox__item">
+                                                <input type="radio" name="checkbox-radio" class="checkbox__button-hide" />
+                                                <div class="checkbox__content">
+                                                    <div class="checkbox__button"></div>
+                                                    <div class="checkbox__text">Потребуется сдача</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="checkbox__elem">
+                                        <div class="checkbox">
+                                            <label class="checkbox__item">
+                                                <input type="radio" name="checkbox-radio" class="checkbox__button-hide" />
+                                                <div class="checkbox__content">
+                                                    <div class="checkbox__button"></div>
+                                                    <div class="checkbox__text">Оплата по карте</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <a href="#" class="btn btn--order">Заказать</a>
+                        <a href="" class="clean" style="text-decoration: none;">Очистить</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="section section__map">
+        <div class="container container--map">
+            <div id="map" class="map"></div>
+            <div class="footer">
+                <div class="footer__inform">
+                    <div class="footer__col-left">
+                        <div class="address">
+                            <p> Санкт-Петербург, ул. Бабушкина, д. 12/1, 15 </p>
+                        </div>
+                        <a href="" class="phone__link">
+                            <svg class="phone__icon">
+                                <use xlink:href="./burgers-img/sprite.svg#phone"></use>
+                            </svg>
+                            <div class="phone__number"><p> (800) 00-392-10</p></div>
+                        </a>                            
+                    </div>
+                    <div class="footer__col-right">
+                        <ul class="socials">
+                            <li class="socials-icon__elem">
+                                <a href="" class="socials-icon__link">
+                                    <svg class="icon__img">
+                                        <use class="img__vk" xlink:href="./burgers-img/sprite.svg#vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-icon__elem">
+                                <a href="" class="socials-icon__link">
+                                    <svg class="icon__img">
+                                        <use class="img__fb" xlink:href="./burgers-img/sprite.svg#fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-icon__elem">
+                                <a href="" class="socials-icon__link">
+                                    <svg class="icon__img">
+                                        <use class="img__inst" xlink:href="./burgers-img/sprite.svg#inst"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-icon__elem">
+                                <a href="" class="socials-icon__link">
+                                    <svg class="icon__img">
+                                        <use class="img__tw" xlink:href="./burgers-img/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

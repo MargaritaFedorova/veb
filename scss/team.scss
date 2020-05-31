@@ -1,0 +1,141 @@
+.section__team {
+    background: url(../burgers-img/bg-color/section-team.png) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.team {
+    max-height: 100%;
+}
+
+.team__container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    background-color: #3a3d3f;
+    opacity: .95;
+
+    @include tablets {
+        left: 0;
+        text-align: center;
+    }
+}
+
+.title__team {
+    text-align: center;
+    margin: 0;
+    padding-right: 70px;
+    padding-top: 100px;
+
+    @include tablets {
+        margin: rem(110px) 17% rem(55px);
+        padding: 0;
+    }
+}
+
+.accordeon-team__list {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.accordeon-team__link {
+    display: flex;
+    text-decoration: none;
+
+    @include tablets {
+        padding-left: rem(50px);
+    }
+}
+
+.accordeon-team__elem {
+    position: relative;
+    margin-bottom: rem(20px);
+
+    &:first-child {
+        margin-top: rem(50px); 
+    }
+
+    &:hover .accordeon-team__triangle {
+        background-image: url(../burgers-img/team/Up.png);
+        border: transparent;
+    }
+
+    &:hover {
+        .accordeon-team__item {
+            height: rem(110px);
+
+            @include tablets {
+                height: rem(160px);
+            }
+        }
+        .accordeon-team__name {
+            color: $yellow;
+        }
+    }
+}
+
+.accordeon-team__triangle {
+    width: rem(10px);
+    height: rem(15px);
+    margin-right: rem(15px);
+    margin-left: rem(15px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../burgers-img/team/down.png);
+}
+
+.accordeon-team__item {
+    display: flex;
+    align-items: flex-start;
+    background-color: #3a3d3f;
+    opacity: .95;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s height;
+    margin: 7% 2% -7% 2%;
+
+    &-title {
+        margin: 0;
+    }
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+}
+.accordeon-team__item-img {
+    width: rem(150px);
+    height: rem(150px);
+    margin-right: 2%;
+
+    @include tablets {
+        height: 80px;
+        width: 80px;
+        margin-right: 10px;
+        margin-bottom: rem(10px);
+    }
+}
+.item__pic {
+    margin: 0;
+    height: rem(80px);
+    position: relative;
+    top: 0;
+    border-radius: 50%;
+
+    @include tablets {
+        width: rem(78px);
+        height: rem(78px);
+    }
+}
+
+.accordeon-team__item-content {
+    @include tablets {
+        padding: 0 15%;
+    }
+}
+ 
+
+

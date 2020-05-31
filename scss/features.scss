@@ -1,0 +1,20 @@
+.features {
+    background: url(../burgers-img/bg-color/bg.png) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.features__list {
+    display: flex;
+    justify-content: space-between;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+.features__item {
+    //width: calc(100% / 3 - 26px);
+    @include phones {
+        display: flex;
+    }
+    
+}

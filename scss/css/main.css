@@ -1,0 +1,942 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  /* не высвечивается автоматом, надо проверить, есть ли расширение */
+  /*moz-osx-font-smoothing: grayscale;*/
+  position: relative;
+  /*@include ubuntu();*/
+  color: black;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-width: 960px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 650px;
+}
+.section--align--top {
+  justify-content: flex-start;
+}
+.section--menu {
+  /*в в нет, пути поменять перед заливкой на сайт*/
+  background: url(../burgers-img/bg-color/bg-accordeon.png) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.section--slider {
+  background: linear-gradient(to bottom, #F9B43B 0%, #eb8d38 50%, #F9B43B 100%);
+}
+.section--team {
+  background: url(../burgers-img/bg-color/section-team.png) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+}
+
+.header__btns {
+  display: flex;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+}
+.menu__item:before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+  margin-left: 13px;
+}
+.menu__item:first-child:before {
+  display: none;
+}
+
+.menu__link {
+  margin-left: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.hero {
+  background: url(../burgers-img/bg-color/video-b-g.png) center center no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.section__desc {
+  /*section в оригинале hero*/
+  font-size: 65px;
+  /*@include lifehuck();*/
+  line-height: 1.1;
+}
+
+.hero__content {
+  display: flex;
+  align-items: center;
+  flex: 0.8;
+}
+
+.hero__text {
+  width: 50%;
+  padding-top: 140px;
+}
+
+.btn {
+  background: #e45028;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #e45028;
+  border-radius: 5px;
+  font-size: 15px;
+  display: inline-block;
+  padding: 10px 15px;
+  color: white;
+  margin-left: 15px;
+}
+.btn--color--gray {
+  background: #2f3234;
+  margin-left: 0px;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.features {
+  background: url(../burgers-img/bg-color/bg.png) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 158px;
+  padding-top: 56px;
+}
+
+.features__item {
+  width: calc(100% / 3 - 26px);
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature__img-elem {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 20px;
+}
+
+.feature__img {
+  display: flex;
+  justify-content: center;
+}
+
+.feature__title {
+  /* нет в вебинаре */
+  font-weight: bold;
+}
+
+.reviews {
+  height: 100vh;
+  min-height: 650px;
+  background-color: black;
+}
+
+.reviews__list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.reviews__item {
+  width: 25%;
+  height: 50%;
+}
+
+.review {
+  position: relative;
+  color: white;
+  filter: grayscale(100%);
+}
+.review:hover .review__hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.review__img-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.review__pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review__hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: 0.3s;
+}
+
+.order-section {
+  background: url(../burgers-img/bg-color/section-4.png) center center no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.order__row {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.order__block {
+  flex: 1;
+  margin-right: 20px;
+}
+.order__block:last-child {
+  margin-right: 0;
+}
+
+.order__title {
+  margin-bottom: 5px;
+}
+
+.order__input {
+  width: 100%;
+  padding: 8px 21px;
+  border: none;
+  border-radius: 5px;
+}
+
+.section__menu {
+  background: url(../burgers-img/bg-color/bg-accordeon.png) center center no-repeat;
+  background-size: cover;
+}
+
+.accordeon-menu {
+  display: flex;
+  position: absolute;
+  /*с абсолютом уезжает наврех 1 секции*/
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: white;
+}
+
+.accordeon-menu__list {
+  display: flex;
+}
+
+.accordeon-menu__elem {
+  display: flex;
+}
+.accordeon-menu__elem:hover .accordeon-menu__content {
+  width: 540px;
+}
+.accordeon-menu__elem:hover .accordeon-menu__title-text {
+  color: #f9b43b;
+}
+
+.accordeon-menu__title-one {
+  position: relative;
+  min-width: 80px;
+  /* в оригинале ширина без min*/
+  background-image: url(../burgers-img/accordeons/for-meet.png);
+  /*при заливке на сайт использовать другой путь*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.accordeon-menu__title-two {
+  position: relative;
+  min-width: 80px;
+  /*в вебинаре просто ширина, не минимальная*/
+  background-image: url(../burgers-img/accordeons/for-vegan.png);
+  /* при заливке на сайт использовать другой путь*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.accordeon-menu__title-tree {
+  position: relative;
+  min-width: 80px;
+  /*в вебинаре просто ширина, не минимальная*/
+  background-image: url(../burgers-img/accordeons/for-diet.png);
+  /* при заливке на сайт использовать другой путь*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.accordeon-menu__title-text {
+  position: absolute;
+  bottom: -20px;
+  /*в вебинаре -40рх*/
+  left: 50%;
+  transform: rotate(-90deg) translate(0, -50%);
+  font-size: 40px;
+  color: white;
+  transform-origin: 0 0;
+  white-space: nowrap;
+}
+
+.accordeon-menu__content {
+  background-color: rgba(47, 50, 52, 0.9);
+  width: 0;
+  overflow: hidden;
+  transition: 1.3s width;
+}
+
+.accordeon-menu__content-text {
+  padding: 60px 30px;
+  width: 540px;
+}
+
+.slider {
+  background: linear-gradient to bottom, #F9B43B 0%, #eb8d38 50%, #F9B43B 100%;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 475px;
+}
+
+.slider__list {
+  display: flex;
+  height: 100%;
+}
+
+.slider__elem {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 0 -10px;
+}
+
+.slider__col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 10px;
+  height: 100%;
+}
+.slider__col--padding {
+  padding: 60px 10px 60px;
+}
+
+.slider__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.slider__img img {
+  width: 100%;
+}
+
+.slider__text {
+  color: white;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.slider__info {
+  display: flex;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.slider__cost {
+  font-size: 30px;
+  line-height: 33px;
+  color: #e45028;
+  margin-right: 30px;
+}
+.slider__cost span {
+  font-size: 72px;
+}
+
+.recipe {
+  position: absolute;
+  display: flex;
+}
+
+.section__team {
+  background: url(../burgers-img/bg-color/section-team.png) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.team {
+  max-height: 100%;
+}
+
+.team__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  background-color: #3a3d3f;
+  opacity: 0.95;
+}
+
+.title__team {
+  margin: 110px 17% 55px;
+}
+
+.accordeon-team__list {
+  margin: 0 10% 0 15%;
+}
+
+.accordeon-team__link {
+  display: flex;
+  text-decoration: none;
+}
+
+.accordeon-team__elem {
+  position: relative;
+}
+.accordeon-team__elem:hover .accordeon-team__triangle {
+  background-image: url(../burgers-img/team/Up.png);
+  border: transparent;
+}
+.accordeon-team__elem:hover .accordeon-team__item {
+  height: 133px;
+}
+.accordeon-team__elem:hover .accordeon-team__name {
+  color: #f9b43b;
+}
+
+.accordeon-team__triangle {
+  width: 10px;
+  height: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../burgers-img/team/down.png);
+}
+
+.accordeon-team__item {
+  display: flex;
+  align-items: flex-start;
+  background-color: #3a3d3f;
+  opacity: 0.95;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s height;
+}
+.accordeon-team__item-img {
+  padding-top: 5%;
+  padding-left: 5%;
+}
+.accordeon-team__item-content {
+  margin-left: 5%;
+  color: white;
+}
+.accordeon-team__item-title {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+.accordeon-team__item-text {
+  line-height: 1;
+  text-align: justify;
+}
+
+.item__pic {
+  width: 108%;
+  height: 88px;
+  border-radius: 50%;
+}
+
+.section__title {
+  font-size: 50px;
+  font-weight: bold;
+  /* в в нет*/
+  color: #f9b43b;
+  margin-bottom: 50px;
+  line-height: 1;
+  text-transform: uppercase;
+  /* в в нет*/
+}
+.section__title--centered {
+  text-align: center;
+}
+.section__title--color--black {
+  color: black;
+  padding-top: 135px;
+  /* в в нет*/
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  /* в вебинаре нет*/
+  color: #f9b43b;
+  margin-bottom: 50px;
+  line-height: 1;
+  text-transform: uppercase;
+  /* в вебинаре нет*/
+}
+.title--white {
+  color: white;
+  margin-left: 95px;
+}
+.title--white-one {
+  color: white;
+  margin-left: 0;
+}
+.title--person {
+  color: white;
+  font-size: 14px;
+}

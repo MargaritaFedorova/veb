@@ -1,0 +1,44 @@
+.btn {
+    background: $red;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: $red;
+    border-radius: rem(5px);
+    font-size: rem(15px);
+    display: inline-block;
+    padding: rem(10px) rem(15px);
+    color: white;
+    margin-left: rem(15px);
+
+    &--color--gray {
+        background: #2f3234;
+        margin-left: 0px;
+
+        @include phones {
+            display: none;
+        }
+    }
+
+    &--none {
+        display: none;
+        
+
+        @include phones {
+            padding: rem(5px) rem(7px);
+            display: inline-block;
+            margin-top: rem(20px);
+        }
+    }
+
+    &--order {
+        margin-left: 0;
+    }
+}
+.bottom {
+    display: flex;
+}
+.clean {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}

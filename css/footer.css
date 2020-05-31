@@ -1,0 +1,9 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.phone__icon {
+  width: rem(10px);
+  height: rem(10px);
+}

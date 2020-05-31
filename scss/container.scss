@@ -1,0 +1,23 @@
+.container {
+    margin: 0 auto;
+    position: relative;
+    max-width: 940px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    
+    &--team {
+        position: static;
+    }
+
+    &--features {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    &--map {
+        height: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,73 @@
+.section__title {
+    font-size: rem(50px);
+    font-family: gagalin;
+    //ont-weight: bold; /* в в нет*/
+    color: #f9b43b;
+    //margin-bottom: rem(50px);
+    line-height: 1;
+    text-transform: uppercase; /* в в нет*/
+
+    &--centered {
+        text-align: center;
+        color: black;
+        padding-top: rem(100px); /* в в нет*/
+
+        @include phones {
+            padding-top: rem(10px);
+            margin: 10% 0 4%;
+        }
+    }
+    
+    &--order {
+        text-align: center;
+        margin-top: rem(-30px);
+        margin-bottom: rem(30px);
+    }
+
+    @include phones {
+        font-size: rem(46px);
+    }
+}
+
+.title {
+    //font-family: "gagalin";
+    font-size: rem(50px);
+    //font-weight: bold; /* в вебинаре нет*/
+    color: #f9b43b;
+    margin-bottom: rem(50px);
+    line-height: 1;
+    text-transform: uppercase; /* в вебинаре нет*/
+
+    &--white {
+        color: white;
+        position: absolute;
+        top: 64px;
+        left: 50px;
+    }
+
+    &--white-one {
+        color: white;
+        margin-left: 0;
+
+        @include tablets {
+            margin: rem(-20px) rem(45px) rem(10px) rem(45px);
+            font-size: rem(43px);
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        @include phones {
+            margin: rem(-20px) rem(50px) rem(10px) rem(50px);
+            font-size: rem(43px);
+            display: flex;
+            text-align: center;
+        }
+    }
+
+    &--person {
+        color: white;
+        font-size: rem(16px);
+        margin-bottom: rem(10px);
+    }
+}

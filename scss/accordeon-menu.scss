@@ -1,0 +1,92 @@
+.section__menu {
+    background: url(../burgers-img/bg-color/bg-accordeon.png) center center no-repeat;
+    background-size: cover;
+}
+.accordeon-menu {
+    display: flex;
+    position: absolute; 
+    
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: white; 
+}
+.accordeon-menu__list {
+    display: flex;
+}
+
+.accordeon-menu__elem {
+    display: flex;
+
+    &:hover {
+        .accordeon-menu__content {
+           width: rem(540px);
+
+           @include tablets {
+            width: calc(100vw - 177px);
+           }
+
+            @include phones {
+                width: calc(100vw - 177px);
+
+                &--last {
+                    width: calc(100vw - 96px);
+                }
+            }
+        }
+        .accordeon-menu__title-text {
+            color: $yellow;
+        }
+    }
+} 
+
+.accordeon-menu__title-one { 
+    position: relative;
+    min-width: rem(80px); 
+    background-image: url(../burgers-img/accordeons/for-meet.png); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.accordeon-menu__title-two { 
+    position: relative;
+    min-width: rem(80px); 
+    background-image: url(../burgers-img/accordeons/for-vegan.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.accordeon-menu__title-tree { 
+    position: relative;
+    min-width: rem(80px); 
+    background-image: url(../burgers-img/accordeons/for-diet.png); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.accordeon-menu__title-text {
+    position: absolute;
+    bottom: rem(-20px); 
+    left: 50%; 
+    transform: rotate(-90deg) translate(0, -50%);
+    font-size: rem(40px);
+    color: white;
+    transform-origin: 0 0;
+    white-space: nowrap;
+}
+.accordeon-menu__content {
+    background-color: rgba(47, 50, 52, 0.9);
+    width: 0;
+    overflow: hidden;
+    transition: 1.3s width;
+}
+.accordeon-menu__content-text {
+    padding: rem(60px) rem(30px);
+    //width: rem(540px);
+
+    @include tablets {
+        font-size: rem(13px);
+        
+    }
+}

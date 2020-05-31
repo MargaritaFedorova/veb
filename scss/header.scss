@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: rem(12px);
+}
+.header__btns {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    @include tablets {
+        display: none;
+    }
+}
+
+
+
+

@@ -1,0 +1,69 @@
+.hero {
+    background: url(../burgers-img/bg-color/video-b-g.png) center center no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.section__title {
+    margin: 3%;
+}
+
+.section__desc { /*section в оригинале hero*/
+    font-size: rem(50px);
+    /*@include lifehuck();*/
+    line-height: 1.1;
+    margin: 0;
+
+    @include phones {
+        font-size: rem(46px);
+    }
+}
+
+.hero__content {
+    display: flex;
+    align-items: center;
+    flex: .8;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15%;
+    }
+
+    @include phones {
+        padding: 0;
+    }
+}
+ 
+.hero__img {
+    width: 50%;
+    
+    @include tablets {
+        width: rem(290px);
+        //height: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include phones {
+        width: 80%;
+    }
+}
+ 
+.hero__text {
+    width: 50%;
+    padding-top: rem(140px);
+
+    @include tablets {
+        width: auto;
+        text-align: center; 
+        padding-top: rem(10px);
+    }
+}

@@ -1,0 +1,32 @@
+.feature {
+    text-align: center;
+}
+
+.feature__img-elem {
+    @media (max-width:350px) {
+        //display: none;
+        position: absolute;
+        margin-left: 30%;
+        margin-top: -20%;
+        opacity: 0.4;
+    }
+}
+
+.feature__img {
+    width: 96px;
+    height: 96px;
+    margin: 30px 0;
+}
+.feature__title { /* нет в вебинаре */
+    font-weight: bold;
+    margin: rem(10px) 0;
+
+    @media (max-width:320px) {
+        margin: rem(10px) 0;
+    }
+}
+.feature__text {
+    text-align: justify;
+    padding: 0 5%;
+    
+} 

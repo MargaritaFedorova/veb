@@ -1,0 +1,28 @@
+.scroll  {
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border: none;
+
+    &--down {
+        bottom: rem(40px);
+        left: 50%;
+    }
+
+    &--left {
+        top: 50%;
+        left: rem(-20px);
+        transform: rotate(90deg);
+    }
+
+    &--right {
+        top: 50%;
+        right: rem(-20px);
+        transform: rotate(270deg);
+    }
+}
+
+.scroll__img {
+    width: 30px;
+    height: 21px;
+}
